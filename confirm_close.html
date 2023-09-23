@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<title>Close this tab</title>
+</head>
+
+<body>
+
+<button type="button">1. Click this button</button>
+
+<p>2. Close this tab and watch the warning box come up!</p>
+
+<p>3. Click "Stay on page"</p>
+
+<script>
+window.onbeforeunload = function() {
+	return "foo";
+};
+</script>
+
+</body>
+
+</html>
